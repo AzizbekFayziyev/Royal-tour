@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Global styles
+
+body,
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+.wrapper {
+  @apply max-w-[1366px] mx-auto px-4;
+}
+
+// Header styles
+
+header {
+  @apply relative;
+  background: url("/headerBg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    @apply w-full h-full left-0 top-0 bg-[#4193ffe0] absolute;
+  }
+
+  .swiper {
+    min-width: 100% !important;
+    margin: 0 auto !important;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    @apply rounded-2xl border-[6px] border-white/15 overflow-hidden relative w-[340px] h-[210px] sm:w-[500px]  sm:h-[300px] mb-4;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+}
+
+// Responsive
+
+@media (max-width: 1200px) {
+  #ellipseTop {
+    @apply top-[-32px];
+  }
+
+  #ellipseBottom {
+    @apply bottom-[-180px];
+  }
+}
+
+@media (max-width: 840px) {
+  #ellipseTop {
+    @apply top-[-24px];
+  }
+
+  #ellipseBottom {
+    @apply bottom-[-160px];
+  }
+}
+
+@media (max-width: 640px) {
+  #ellipseTop {
+    @apply top-[-15px];
+  }
+
+  #ellipseBottom {
+    @apply bottom-[-140px];
+  }
+}
+
+@media (max-width: 380px) {
+  #ellipseTop {
+    @apply top-[-12px];
+  }
+
+  #ellipseBottom {
+    @apply bottom-[-115px];
+  }
+}
