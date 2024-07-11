@@ -1,12 +1,13 @@
 import { CalendarDays, Clock3, Utensils } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const FireTours = () => {
   return (
     <section className="mt-8 sm:mt-28">
       <h2 className="text-center font-bold text-neutral text-3xl relative w-max mx-auto">
-      🔥 Горящие туры
+        🔥 Горящие туры
         <img
           src="/lines/line3.svg"
           alt="line"
@@ -17,7 +18,10 @@ const FireTours = () => {
       <div className="wrapper mt-8">
         <div className="flex justify-center gap-6 flex-wrap">
           {[1, 2, 3, 4].map((e) => (
-            <div key={e} className="overflow-hidden rounded-2xl bg-white w-full sm:max-w-[290px]">
+            <div
+              key={e}
+              className="overflow-hidden rounded-2xl bg-white w-full sm:max-w-[290px]"
+            >
               <Image
                 className="w-full"
                 src="/tour.png"
@@ -67,12 +71,17 @@ const FireTours = () => {
                 </div>
 
                 <div className="mt-6">
-                  <button className="btn border-none bg-lightBlue hover:bg-lightBlue2 text-primary w-full font-semibold text-base">
-                    от 13 000 000 сум/чел
-                  </button>
-                  <button className="btn btn-primary w-full font-semibold text-base mt-3">
-                    Забронировать
-                  </button>
+                  <Link href="#contact">
+                    <button className="btn border-none bg-lightBlue hover:bg-lightBlue2 text-primary w-full font-semibold text-base">
+                      от 13 000 000 сум/чел
+                    </button>
+                  </Link>
+
+                  <Link href="#contact">
+                    <button className="btn btn-primary w-full font-semibold text-base mt-3">
+                      Забронировать
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

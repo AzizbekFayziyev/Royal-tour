@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -14,9 +15,11 @@ const Banner = () => {
               позвонить к нам по номеру +99899 112 72 72 или заполните форму
             </p>
 
-            <button className="btn btn-secondary px-6 text-base text-neutral">
-              Оставить заявку
-            </button>
+            <Link href="#contact">
+              <button className="btn btn-secondary px-6 text-base text-neutral">
+                Оставить заявку
+              </button>
+            </Link>
           </div>
 
           <Image
