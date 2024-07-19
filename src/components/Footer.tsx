@@ -23,7 +23,11 @@ const Footer = () => {
               height={200}
             />
 
-            <p className="mt-12 text-gray-400">
+            <p className="mt-12">
+              Директор : Хакимов Лазиз Махмуджон огли
+            </p>
+
+            <p className="mt-4 text-gray-400 whitespace-nowrap">
               © 2024 «Royal Tour».
               <br />
               Все права защищены
@@ -31,6 +35,13 @@ const Footer = () => {
           </aside>
 
           <div className="flex flex-wrap gap-10 sm:gap-20">
+            <nav>
+              <h6 className="text-lg mb-4 font-bold">Рабочий день</h6>
+
+              <li className="list-none text-base my-1">Пн-Сб 9.00-18.00</li>
+
+              <li className="list-none text-base my-1">воскресенье закрыто</li>
+            </nav>
             <nav>
               <h6 className="text-lg mb-4 font-bold">Контакты</h6>
 
