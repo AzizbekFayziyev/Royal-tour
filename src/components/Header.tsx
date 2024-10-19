@@ -7,7 +7,7 @@ const Header = () => {
       <div className="text-center text-white relative z-20">
         <div className="px-2 max-w-[840px] mx-auto w-full -mt-4 sm:mt-4">
           <h1 className="mt-28 mb-5 text-4xl sm:text-5xl font-bold">
-          AZIZBEK FAYZIYEV !!!!{" "}
+            Ваши мечты о путешествиях{" "}
             <span className="text-secondary">становятся реальностью!</span>
           </h1>
           <p className="mb-10">
